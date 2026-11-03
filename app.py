@@ -78,7 +78,7 @@ load_css()
 # 2. DATABASE INITIALIZATION
 # ==========================================
 
-create_table()
+initialize_database()
 
 
 # ==========================================
@@ -143,8 +143,7 @@ with st.sidebar:
 
     st.caption("Built with Python | Streamlit | Gemini AI")
 
-# Initialise database and import sample data
-initialize_database()
+
 
 # Load enquiries
 df = pd.DataFrame(
