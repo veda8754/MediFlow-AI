@@ -18,16 +18,16 @@ The application combines AI-powered text analysis with an interactive dashboard 
 ## 📸 Application Preview
 
 ### Dashboard
-![MediFlow AI Dashboard](screenshots/dashboard.png)
+![MediFlow AI Dashboard](screenshots/01-dashboard.png)
 
 ### Enquiry Management
-![Enquiry Management](screenshots/enquiries.png)
+![Enquiry Management](screenshots/11-enquiries.png)
 
 ### AI Enquiry Analysis
-![AI Enquiry Analysis](screenshots/ai-analyzer.png)
+![AI Enquiry Analysis](screenshots/ai enquiry.png)
 
 ### Suggested Response
-![AI Suggested Response](screenshots/suggested-response.png)
+![AI Suggested Response](screenshots/ai response.png)
 ## 🛠️ Tech Stack
 
 | Technology        | Purpose                         |
