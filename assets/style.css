@@ -1,0 +1,151 @@
+/* Main background */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #f4f9ff,
+        #eef6ff,
+        #ffffff
+    );
+}
+
+/* Main content animation */
+.block-container {
+    animation: fadeIn 0.8s ease-in-out;
+    padding-top: 2rem;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #e4f2ff,
+        #f5faff
+    );
+}
+
+/* Sidebar text */
+[data-testid="stSidebar"] p {
+    color: #23415c;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    border: 1px solid #dcecff;
+    box-shadow: 0 4px 12px rgba(40, 100, 160, 0.06);
+    transition: all 0.3s ease;
+}
+
+/* Metric hover animation */
+[data-testid="stMetric"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(40, 100, 160, 0.13);
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(
+        90deg,
+        #2478c8,
+        #36a3d9
+    );
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(36, 120, 200, 0.25);
+    color: white;
+}
+
+/* Section headings */
+h1, h2, h3 {
+    color: #183b5b;
+}
+
+/* Dataframe container */
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Smooth progress bar */
+.stProgress > div > div > div {
+    background: linear-gradient(
+        90deg,
+        #2478c8,
+        #36b5d8
+    );
+    transition: width 1s ease-in-out;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+/* Fix heading visibility */
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4 {
+    color: #183b5b !important;
+    line-height: 1.5 !important;
+    margin-bottom: 15px !important;
+    font-weight: 700 !important;
+}
+
+/* Fix general text visibility */
+.stApp p,
+.stApp label,
+.stApp span,
+.stApp [data-testid="stMarkdownContainer"] {
+    color: #29445c;
+}
+
+/* Prevent heading overlap */
+.stApp h1,
+.stApp h2,
+.stApp h3 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Improve spacing between sections */
+.stDivider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Keep sidebar headings readable */
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #183b5b !important;
+}
