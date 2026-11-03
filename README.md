@@ -15,7 +15,19 @@ The application combines AI-powered text analysis with an interactive dashboard 
 * **Follow-up Recommendations:** Identifies enquiries that may require administrative follow-up.
 * **CSV Export:** Export enquiry records for further analysis.
 * **Demo Mode:** Explore the application's core functionality without using an API key.
+## 📸 Application Preview
 
+### Dashboard
+![MediFlow AI Dashboard](screenshots/dashboard.png)
+
+### Enquiry Management
+![Enquiry Management](screenshots/enquiries.png)
+
+### AI Enquiry Analysis
+![AI Enquiry Analysis](screenshots/ai-analyzer.png)
+
+### Suggested Response
+![AI Suggested Response](screenshots/suggested-response.png)
 ## 🛠️ Tech Stack
 
 | Technology        | Purpose                         |
