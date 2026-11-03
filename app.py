@@ -10,7 +10,7 @@ import streamlit as st
 import pandas as pd
 
 from database.db import (
-    create_table,
+    initialize_database,
     get_all_enquiries,
     update_enquiry,
     update_status
@@ -143,14 +143,44 @@ with st.sidebar:
 
     st.caption("Built with Python | Streamlit | Gemini AI")
 
+# Initialise database and import sample data
+initialize_database()
 
+# Load enquiries
+df = pd.DataFrame(
+    get_all_enquiries(),
+    columns=[
+        "enquiry_id",
+        "patient_name",
+        "enquiry_text",
+        "enquiry_date",
+        "category",
+        "sentiment",
+        "priority",
+        "ai_response",
+        "status",
+        "requires_followup"
+    ]
+)
 # ==========================================
 # 5. LOAD DATABASE RECORDS
 # ==========================================
 
-records = get_all_enquiries()
-
-df = pd.DataFrame(records)
+df = pd.DataFrame(
+    get_all_enquiries(),
+    columns=[
+        "enquiry_id",
+        "patient_name",
+        "enquiry_text",
+        "enquiry_date",
+        "category",
+        "sentiment",
+        "priority",
+        "ai_response",
+        "status",
+        "requires_followup"
+    ]
+)
 
 
 # ==========================================
