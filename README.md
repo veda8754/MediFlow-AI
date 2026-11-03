@@ -24,10 +24,10 @@ The application combines AI-powered text analysis with an interactive dashboard 
 ![Enquiry Management](screenshots/11-enquiries.png)
 
 ### AI Enquiry Analysis
-![AI Enquiry Analysis](screenshots/ai enquiry.png)
+![AI Enquiry Analysis](screenshots/12-AI enquiry analyzer.png)
 
 ### Suggested Response
-![AI Suggested Response](screenshots/ai response.png)
+![AI Suggested Response](screenshots/13-suggested response.png)
 ## 🛠️ Tech Stack
 
 | Technology        | Purpose                         |
