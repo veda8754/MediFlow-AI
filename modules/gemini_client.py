@@ -9,12 +9,20 @@ from google.genai import errors
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Load API key
+# Load API key from local .env or Streamlit Cloud Secrets
 load_dotenv(BASE_DIR / ".env")
 
 api_key = os.getenv("GEMINI_API_KEY")
 
 if not api_key:
-    raise ValueError("Gemini API key not found!")
+    try:
+        import streamlit as st
+        api_key = st.secrets.get("GEMINI_API_KEY")
+    except Exception:
+        api_key = None
+
+if not api_key:
+    raise ValueError("Gemini API key not found! Configure it in .env or Streamlit Secrets.")
 
 # Initialize Gemini with timeout
 client = genai.Client(
