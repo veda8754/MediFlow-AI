@@ -30,6 +30,7 @@ The application combines AI-powered text analysis with an interactive dashboard 
 ### Suggested Response
 
 ![AI Suggested Response](screenshots/13-suggested%20response.png)
+
 ## 🛠️ Tech Stack
 
 | Technology        | Purpose                         |
